@@ -4,7 +4,7 @@ public class Welder extends Employee{
         this.authorityLevel = Employee.WELDER;
     }
 
-    public void write(String[] message) {
-        message[0] += "All parts have been welded together.\n";
+    public void write(String message) {
+        System.out.println(message + "all parts have been welded together");
     }
 }

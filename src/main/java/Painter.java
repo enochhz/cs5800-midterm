@@ -4,7 +4,7 @@ public class Painter extends Employee {
         this.authorityLevel = Employee.PAINTER;
     }
 
-    public void write(String[] message) {
-        message[0] += "Car complete.\n";
+    public void write(String message) {
+        System.out.println(message + "car complete");
     }
 }

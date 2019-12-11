@@ -13,7 +13,7 @@ public abstract class Employee {
         this.nextEmployee = employee;
     }
 
-    public void doWork(int authorityLevel, String[] message) {
+    public void doWork(int authorityLevel, String message) {
         if (this.authorityLevel <= authorityLevel) {
             write(message);
         }
@@ -22,7 +22,7 @@ public abstract class Employee {
         }
     }
 
-    abstract protected void write(String[] message);
+    abstract protected void write(String message);
 
 
 }

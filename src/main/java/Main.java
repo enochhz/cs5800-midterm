@@ -8,8 +8,6 @@ public class Main {
         partCollector.setNextEmployee(assembler);
         assembler.setNextEmployee(welder);
         welder.setNextEmployee(painter);
-        String[] message = new String[]{""};
-        partCollector.doWork(4, message);
-        System.out.println(message[0]);
+        partCollector.doWork(4, "");
     }
 }
